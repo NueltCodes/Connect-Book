@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Connect Book</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav left">
+      <img src="img/connectbook.png" class="logo" alt="" />
+      <ul>
+        <li>
+          <img src=" img/notification.png" class="notification" />
+        </li>
+        <li>
+          <img src="img/inbox.png" class="inbox" />
+        </li>
+        <li>
+          <img src="img/video.png" class="video" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav right">
+      <div class="search-box">
+        <img src="img/search.png" alt="">
+        <input type="text" placeholder="Search">
+      </div>
+
+      <div class="nav user-pics online" onclick="settingsMenuToggle()">
+        <img src="img/Profile-pics.jpg" alt="" />
+      </div>
+    </div>
+
+    <!--Settings Menu-->
+    <div class="settings-menu">
+      <div id="dark-btn">
+        <span></span>
+      </div>
+
+      <div class="settings-menu-inner">
+        <div class="user-profile">
+          <img src="img/profile-pics.jpg" alt="" />
+          <div>
+            <p>Olaniran Emmanuel</p>
+            <a href="#">See Your Profile</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="user-profile">
+          <img src="img/feedback.png" alt="" />
+          <div>
+            <p>Give Feedback</p>
+            <a href="#">Help us to improve the new Design</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="setting-links">
+          <img src="img/setting.png" class="settings-icon" /><a href="#">Settings & Privacy <img src="img/arrow.png"
+              width="10px" /></a>
+        </div>
+
+        <div class="setting-links">
+          <img src="img/help.png" class="settings-icon" /><a href="#">Help & Support <img src="img/arrow.png"
+              width="10px" /></a>
+        </div>
+
+        <div class="setting-links">
+          <img src="img/display.png" class="settings-icon" /><a href="#">Display and Accessibility <img
+              src="img/arrow.png" width="10px" /></a>
+        </div>
+
+        <div class="setting-links">
+          <img src="img/logout.png" class="settings-icon" /><a href="#">Logout <img src="img/arrow.png"
+              width="10px" /></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!--Left-sidebar-->
+
+    <div class="left-sidebar">
+      <div class="imp-links">
+        <a href="#"><img src="img/news.png" alt="" />Latest News</a>
+        <a href="#"><img src="img/friends.png" alt="" />friends</a>
+        <a href="#"><img src="img/group.png" alt="" />group</a>
+        <a href="#"><img src="img/marketplace.png" alt="" />Market Place</a>
+        <a href="#"><img src="img/watch.png" alt="" />Watch</a>
+        <a href="#">See More</a>
+      </div>
+
+      <div class="shortcut-links">
+        <p>Your Shortcut</p>
+        <a href=""><img src="img/shortcut-1.png" alt="" />Web Developers</a>
+        <a href=""><img src="img/shortcut-2.png" alt="" />Web Design Course</a>
+        <a href=""><img src="img/shortcut-3.png" alt="" />Full Stack Development</a>
+        <a href=""><img src="img/shortcut-4.png" alt="" />Websites Experts</a>
+      </div>
+    </div>
+
+    <!--Main-sidebar-->
+
+    <div class="main-content">
+      <div class="story-gallery">
+        <div class="story story1">
+          <img src="img/upload.png" alt="" />
+          <p>Post Story</p>
+        </div>
+        <div class="story story2">
+          <img src="img/member-1.png" alt="" />
+          <p>Alison</p>
+        </div>
+        <div class="story story3">
+          <img src="img/member-2.png" alt="" />
+          <p>Jackson Aston</p>
+        </div>
+        <div class="story story4">
+          <img src="img/member-3.png" alt="" />
+          <p>Samona Rose</p>
+        </div>
+        <div class="story story5">
+          <img src="img/member-4.png" alt="" />
+          <p>John Doe</p>
+        </div>
+      </div>
+
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="img/profile-pics.jpg" alt="" />
+          <div>
+            <p>Olaniran Emmanuel</p>
+            <small>Public <i class="fas fa-caret-down"></i></small>
+          </div>
+        </div>
+
+        <div class="post-input-container">
+          <textarea rows="3" placeholder="What's on your mind John"></textarea>
+
+          <div class="add-post-links">
+            <a href="#"><img src="img/live-video.png" />Live Video</a>
+            <a href="#"><img src="img/photo.png" />Photo/Video</a>
+            <a href="#"><img src="img/feeling.png" />Feeling Activities</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="img/profile-pics.jpg" alt="" />
+            <div>
+              <p>Olaniran Emmanuel</p>
+              <span>June 24 2022, 13:40 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">
+          Allow me to bring your imagination into creation with the aid of my
+          skill as a <span> Frontend Dev and a Graphics Designer</span>
+          <a href="#">@Olaniran Emmanuel</a> <a href="#">Github Acct</a>
+        </p>
+        <img src="img/feed-image-1.png" class="post-img" />
+
+        <div class="post-row">
+          <div class="activities-icons">
+            <div><img src="img/like-blue.png" />310</div>
+            <div><img src="img/comments.png" />165</div>
+            <div><img src="img/share.png" />120</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="img/Profile-pics.jpg" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="img/profile-pics.jpg" alt="" />
+            <div>
+              <p>Olaniran Emmanuel</p>
+              <span>June 24 2022, 13:40 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">
+          If you would like to contact or hire me for my expertises, Pls do so
+          to <span> contact me on my Email and Linkedin account </span>which i
+          have below or on any of the social media platform convient for you
+          which have on my portfolio <br />
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <img src="img/feed-image-2.png" class="post-img" />
+
+        <div class="post-row">
+          <div class="activities-icons">
+            <div><img src="img/like.png" />610</div>
+            <div><img src="img/comments.png" />265</div>
+            <div><img src="img/share.png" />220</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="img/Profile-pics.jpg" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="img/profile-pics.jpg" alt="" />
+            <div>
+              <p>Olaniran Emmanuel</p>
+              <span>June 24 2022, 13:40 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">
+          If you would like to contact or hire me for my expertises, Pls do so
+          to <span> contact me on my Email and Linkedin account </span>which i
+          have below or on any of the social media platform convient for you
+          which have on my portfolio <br />
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <img src="img/feed-image-3.png" class="post-img" />
+
+        <div class="post-row">
+          <div class="activities-icons">
+            <div><img src="img/like.png" />310</div>
+            <div><img src="img/comments.png" />65</div>
+            <div><img src="img/share.png" />40</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="img/Profile-pics.jpg" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="img/profile-pics.jpg" alt="" />
+            <div>
+              <p>Olaniran Emmanuel</p>
+              <span>June 24 2022, 13:40 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">
+          If you would like to contact or hire me for my expertises, Pls do so
+          to <span> contact me on my Email and Linkedin account </span>which i
+          have below or on any of the social media platform convient for you
+          which have on my portfolio <br />
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <img src="img/feed-image-4.png" class="post-img" />
+
+        <div class="post-row">
+          <div class="activities-icons">
+            <div><img src="img/like.png" />594</div>
+            <div><img src="img/comments.png" />241</div>
+            <div><img src="img/share.png" />157</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="img/Profile-pics.jpg" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="img/profile-pics.jpg" alt="" />
+            <div>
+              <p>Olaniran Emmanuel</p>
+              <span>June 24 2022, 13:40 pm</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p class="post-text">
+          If you would like to contact or hire me for my expertises, Pls do so
+          to <span> contact me on my Email and Linkedin account </span>which i
+          have below or on any of the social media platform convient for you
+          which have on my portfolio <br />
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+        <img src="img/feed-image-5.png" class="post-img" />
+
+        <div class="post-row">
+          <div class="activities-icons">
+            <div><img src="img/like.png" />252</div>
+            <div><img src="img/comments.png" />66</div>
+            <div><img src="img/share.png" />27</div>
+          </div>
+
+          <div class="post-profile-icon">
+            <img src="img/Profile-pics.jpg" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="load-more-btn">
+        <a href="#">Load More</a>
+      </button>
+    </div>
+
+    <!--Right-sidebar-->
+
+    <div class="right-sidebar">
+      <div class="sidebar-title">
+        <h4>Event</h4>
+        <a href="#">See All</a>
+      </div>
+
+      <div class="event">
+        <div class="left-event">
+          <h3>18</h3>
+          <span>March</span>
+        </div>
+
+        <div class="right-event">
+          <h4>Social Media</h4>
+          <p><i class="fas fa-map-marker"></i> Willsion Tech Park</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="left-event">
+          <h3>22</h3>
+          <span>June</span>
+        </div>
+
+        <div class="right-event">
+          <h4>Mobile Marketing</h4>
+          <p><i class="fas fa-map-marker"></i> Willsion Tech Park</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="#">Close</a>
+      </div>
+      <img src="img/advertisement.png" class="side-bar ads" />
+
+      <div class="sidebar-title">
+        <h4>Conversation</h4>
+        <a href="#">Hide Chat</a>
+      </div>
+
+      <div class="online-lists">
+        <div class="online">
+          <img src="img/member-1.png" alt="" />
+        </div>
+        <p>Alison Mina</p>
+      </div>
+
+      <div class="online-lists">
+        <div class="online">
+          <img src="img/member-2.png" alt="" />
+        </div>
+        <p>Jackson Aston</p>
+      </div>
+
+      <div class="online-lists">
+        <div class="online">
+          <img src="img/member-3.png" alt="">
+
+        </div>
+        <p>Samona Rose</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright 2022 Olaniran Emmanuel</p>
+    <small>Frontend Dev</small>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
